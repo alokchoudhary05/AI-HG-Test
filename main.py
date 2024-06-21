@@ -12,7 +12,7 @@ from Symptoms import Symptoms_Disease_Prediction
 from codebase.dashboard_graphs import PregnancyDashboard
 from dashboard import AIHEALTHGUARDDASHBOARD
 
-pregnancy_model = pickle.load(open("model\Pregnancy.sav",'rb'))
+pregnancy_model = pickle.load(open("model/Pregnancy.sav",'rb'))
 diabetic_model = pickle.load(open("model\Diabetes.sav",'rb'))
 heart_model = pickle.load(open("model\Heart.sav",'rb'))
 

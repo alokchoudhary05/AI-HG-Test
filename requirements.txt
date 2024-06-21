@@ -11,6 +11,9 @@ streamlit-option-menu
 pickle-mixin
 
 wordcloud
+wordcloud==1.9.3
+networkx==3.1
+
 
 # numpy==1.26.3
 # pandas==2.1.4

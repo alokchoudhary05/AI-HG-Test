@@ -25,8 +25,8 @@ class Symptoms_Disease_Prediction:
         diets = pd.read_csv("datasets/diets.csv")
 
         # Load model
-        svc = pickle.load(open('datasets\svc.pkl', 'rb'))
-        le = pickle.load(open('datasets\label_encoder.pkl', 'rb'))
+        svc = pickle.load(open('datasets/svc.pkl', 'rb'))
+        le = pickle.load(open('datasets/label_encoder.pkl', 'rb'))
 
         # Normalize column names and data to handle inconsistencies
         workout.rename(columns={'disease': 'Disease'}, inplace=True)

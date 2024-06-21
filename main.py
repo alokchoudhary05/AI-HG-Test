@@ -295,8 +295,8 @@ if selected == 'Heart Disease Prediction':
     with col1:
         if st.button('Heart Disease Test Result'):
             try:
-                input_data = [[int(age), sex, cp, int(trestbps), int(chol), int(fbs), int(restecg), int(thalach), 
-                               int(exang), float(oldpeak), int(slope), int(ca), thal]]
+                input_data = [[age, sex, cp, trestbps, chol, fbs, restecg, thalach, 
+                               exang, oldpeak, slope, ca, thal]]
                 with warnings.catch_warnings():
                     warnings.simplefilter("ignore")
                     heart_prediction = heart_model.predict(input_data)
